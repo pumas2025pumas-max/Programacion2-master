@@ -32,7 +32,7 @@ public class MainProgram {
         System.out.println("1. Ejecutar ejercicio de Listas (ListExercise)");
         System.out.println("2. Ejecutar ejercicio de Pila (StackExercise)");
         System.out.println("3. Ejecutar ejercicio de Cola (QueueExercise)");
-        System.out.println("0. Terminar el programa");
+        System.out.println("4. Terminar el programa");
         System.out.print("Seleccione una opción: ");
         
         if (scanner.hasNextInt()) {
@@ -52,7 +52,7 @@ public class MainProgram {
                     exercise = new QueueExercise(scanner);
                     exercise.run();
                     break;
-                case 0:
+                case 4:
                     running = false;
                     System.out.println("Saliendo del programa principal...");
                     break;
