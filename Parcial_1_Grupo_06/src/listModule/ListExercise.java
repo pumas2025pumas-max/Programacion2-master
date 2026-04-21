@@ -16,9 +16,6 @@ public class ListExercise extends Exercise {
     @Override
     protected void exerciseLogic() {
         switch (currentPhase) {
-            case 0:
-                menuLogic();
-                break;
             case 1:
                 addLogic();
                 break;
@@ -31,9 +28,12 @@ public class ListExercise extends Exercise {
             case 4:
                 clearListLogic();
                 break;
+            case 5:
+                menuLogic();
+                break;
             default:
                 System.out.println("Opción no válida, volviendo al menú.");
-                currentPhase = 0;
+                currentPhase = 5;
                 break;
         }
     }
@@ -62,14 +62,14 @@ public class ListExercise extends Exercise {
         System.out.println("2. Remover por índice");
         System.out.println("3. Remover por palabra (referencia)");
         System.out.println("4. Limpiar toda la lista");
-        System.out.println("0. Salir al Menú Principal");
+        System.out.println("5. Salir al Menú Principal");
 
         
         if (scanner.hasNextInt()) {
             currentPhase = scanner.nextInt();
             scanner.nextLine(); 
             
-            if (currentPhase == 0) {
+            if (currentPhase == 5) {
                 running = false;
             }
         } else {
