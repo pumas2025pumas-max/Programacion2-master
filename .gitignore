@@ -1,0 +1,11 @@
+# Carpeta de configuración interna de Eclipse
+.metadata/
+
+# Archivos compilados
+*.class
+**/bin/
+
+# Archivos de configuración de Eclipse por proyecto
+.settings/
+.classpath
+.project
