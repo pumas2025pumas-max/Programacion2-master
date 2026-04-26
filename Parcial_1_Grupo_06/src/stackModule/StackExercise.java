@@ -16,9 +16,6 @@ public class StackExercise extends Exercise {
 	@Override
 	protected void exerciseLogic() {
 		switch (currentPhase) {
-			case 0:
-				menuLogic();
-				break;
 			case 1:
 				pushLogic();
 				break;
@@ -31,9 +28,12 @@ public class StackExercise extends Exercise {
 			case 4:
 				clearLogic();
 				break;
+			case 5:
+				menuLogic();
+				break;
 			default:
 				System.out.println("Opción no válida, volviendo al menú.");
-				currentPhase = 0;
+				currentPhase = 5;
 				break;
 		}
 	}
@@ -54,12 +54,12 @@ public class StackExercise extends Exercise {
 		System.out.println("2. Pop (remover último elemento)");
 		System.out.println("3. Peek (ver último elemento)");
 		System.out.println("4. Clear (vaciar la pila)");
-		System.out.println("0. Salir al Menú Principal");
+		System.out.println("5. Salir al Menú Principal");
 
 		if (scanner.hasNextInt()) {
 			currentPhase = scanner.nextInt();
 			scanner.nextLine();
-			if (currentPhase == 0) {
+			if (currentPhase == 5) {
 				running = false;
 			}
 		} else {
