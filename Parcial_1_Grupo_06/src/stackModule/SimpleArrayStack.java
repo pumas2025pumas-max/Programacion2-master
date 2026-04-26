@@ -63,3 +63,6 @@ public class SimpleArrayStack<E> implements SimpleStack<E> {
 		return this.size == 0;
 	}
 }
+
+
+//Este es LIFO 

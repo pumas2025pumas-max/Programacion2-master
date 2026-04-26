@@ -127,3 +127,5 @@ public class QueueExercise extends Exercise {
 		currentPhase = 0;
 	}
 }
+
+//Este es FIFO 
