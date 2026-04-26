@@ -63,7 +63,7 @@ public class MainProgram {
         } else {
             // Si el usuario ingresa texto inválido, se repite la selección
             System.out.println("Error: Ingrese un número.");
-            scanner.nextLine();
+            scanner.nextLine(); //esto para limpiar el buffer
         }
     }
 }
